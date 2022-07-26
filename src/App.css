@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+  background-image: linear-gradient(90deg, rgba(22,151,223,1) 0%, rgba(25,103,161,1) 50%, rgba(15,198,215,0.9864320728291317) 100%);;
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
@@ -15,7 +16,7 @@ header {
 
 header,
 form {
-  min-height: 20vh;
+  min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,24 +29,25 @@ form button {
   background: white;
 }
 form button {
-  color: #ff6f47;
+  color: #ff4747;
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #ff6f47;
+  background: #ff4747;
   color: white;
 }
 .todo-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .todo-list {
   min-width: 30%;
   list-style: none;
+  margin-left: 385px;
 }
 
 .todo {
@@ -65,24 +67,43 @@ form button:hover {
   flex: 1;
 }
 
+.img-container {
+  padding-left: 100px;
+}
+
 .trash-btn,
-.complete-btn {
-  background: #ff6f47;
+.complete-btn
+ {
+  background: #ff4747;
   color: white;
   border: none;
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
 }
-.complete-btn {
-  background: rgb(11, 212, 162);
+
+.edit-btn {
+  background: #ecc133;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
 }
+.fa-edit {
+  font-family: "Font Awesome 5 Free";
+}
+.complete-btn {
+  background: rgb(22, 242, 187);
+}
+
 .todo-item {
   padding: 0rem 0.5rem;
 }
 
 .fa-trash,
-.fa-check {
+.fa-check,
+.fa-edit {
   pointer-events: none;
 }
 
@@ -115,7 +136,7 @@ select {
   overflow: hidden;
 }
 select {
-  color: #ff6f47;
+  color: #000000;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
@@ -127,7 +148,7 @@ select {
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #ff6f47;
+  background: #ff4747;
   cursor: pointer;
   pointer-events: none;
 }

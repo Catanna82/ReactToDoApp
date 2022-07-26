@@ -16,6 +16,9 @@ const ToDoList = ({todos, setTodos, filteredTodos}) => {
                     todo={todo}/>
                 ))}
             </ul>
+            <div className='img-container'>
+                <img src='../images/toDoList.png' alt='pic'/>
+            </div>
         </div>
     );
 }

@@ -10,8 +10,8 @@ const ToDoList = ({todos, setTodos, filteredTodos}) => {
                 {filteredTodos.map((todo) => (
                     <ToDo 
                     setTodos={setTodos}
-                    todos={todos} 
-                    text={todo.text} 
+                    todos={todos}
+                    text={todo.text}
                     key={todo.id}
                     todo={todo}/>
                 ))}
